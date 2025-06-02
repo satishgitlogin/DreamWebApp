@@ -3,27 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { LoginService } from './sharedService/login.service';
-import { AuthInterceptor } from './auth.interceptor';
-
-
-
+import { ShowComponent } from './show/show.component';
+import { GrabComponent } from './grab/grab.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShowComponent,
+    GrabComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    HttpClientModule 
+    AppRoutingModule
   ],
-  providers: [LoginService,{
-    provide: HTTP_INTERCEPTORS,
-    useClass: AuthInterceptor,
-    multi: true  
-  } ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
