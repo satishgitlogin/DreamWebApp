@@ -3,6 +3,49 @@ img{
 }
 .navdiv{
     color: white;
-    background-image: linear-gradient(to right, red , yellow);
+    background-image: linear-gradient(to right, rgba(254,117,104,255) , rgba(248,135,73,255));
     
 }
+
+.circle {
+     width: 10px; /* Set the width */
+     height: 10px; /* Set the height (same as width) */
+     border-radius: 50%; /* Creates the circle */
+     background-color:black; /* Optional: Add a background color */
+     margin-bottom: 10px;
+   }
+   .font_size{
+    font-size: 40px;
+   }
+   .col_border{
+    border: 9px solid #dee2e6;
+   }
+   .head_cap{
+    font-size:37px;
+    color: red;
+   }
+   .version_tab{
+    color: red;
+    text-align: center;
+    font-size: 40px;
+   }
+   #footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+ #footer_above {
+    position: fixed;
+    bottom: 208px;
+    left: 122px;
+    width: 100%;
+}
+
+.circle_help {
+     width:170px; /* Set the width */
+     height: 170px; /* Set the height (same as width) */
+     border-radius: 50%; /* Creates the circle */
+     background-color:rgba(254,117,104,255); /* Optional: Add a background color */
+     margin-bottom: 10px;
+   }

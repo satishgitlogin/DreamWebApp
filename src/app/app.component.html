@@ -1,29 +1,147 @@
-<div class="container-fluid navdiv" style="height: 8vh;">
+<div class="container-fluid navdiv" style="height: 8vh;" *ngIf="!show">
   <div class="row">
-    <div class="col" style="text-align: center;">
+    <div class="col" style="text-align: center;margin-top: 14px;">
 
      <img src="assets/photo1.PNG" alt="photo1" style="width:200px">
     </div>
-    <div class="col-5">
+    <div class="col-6">
 <div style="font-size:68px;">UTS</div>
 <div style="font-size: 40px;">IR Unreserved Ticketing</div>
 
     </div>
     <div class="col">
-      <img src="assets/photo2.PNG" alt="photo2" style="width:200px">
+      <img src="assets/photo2.PNG" alt="photo2" style="width:100px; margin-top: 53px;">
     </div>
      <div class="col">
-      <img src="assets/photo2.PNG" alt="photo" style="width:200px">
+      <img src="assets/photo3.PNG" alt="photo3" style="width:100px; margin-top: 53px;">
     </div>
     <div class="col">
 
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-  <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
-</svg>
+<div style="margin-top:73px;">
+        
+<div class="circle"></div>
+<div class="circle"></div>
+<div class="circle"></div>
+</div>
+
 
     </div>
   </div>
 </div>
+
+
+<div *ngIf="!show">
+
+  <div class="container-fluid" style="text-align: center;margin-top: 5px;">
+  <div class="row">
+    <div class="col" >
+     
+     <div><img src="assets/normal.PNG" alt="normal" style="width:120px;"></div>
+      <div class="font_size">Journey Ticket</div>
+    </div>
+    <div class="col">
+      <div><img src="assets/QR.PNG" alt="photo3" style="width:120px;"></div>
+      <div class="font_size">QR
+        <div>Booking</div>
+        </div>
+    </div>
+    <div class="col">
+      <div><img src="assets/quick.PNG" alt="photo3" style="width:120px;"></div>
+      <div class="font_size">Quick Booking</div>
+    </div>
+    <div class="col">
+      <div><img src="assets/platform.PNG" alt="photo3" style="width:120px;"></div>
+      <div class="font_size">Platform Ticket</div>
+    </div>
+    <div class="col">
+      <div><img src="assets/season.PNG" alt="photo3" style="width:120px;"></div>
+      <div class="font_size">Season Ticket</div>
+    </div>
+  </div>
+  </div>
+
+</div>
+
+<div *ngIf="!show">
+<div class="container-fluid" style="text-align: center;margin-top: 5px;">
+  <div class="row">
+    <div class="col col_border" >
+      <div><img src="assets/cancel.PNG" alt="cancel" style="width:120px;"></div>
+      <div class="head_cap">CANCEL TICKET</div>
+    </div>
+    <div class="col col_border" >
+      <div><img src="assets/booking.PNG" alt="booking" style="width:120px;"></div>
+      <div class="head_cap">BOOKING HISTORY</div>
+    </div>
+    <div class="col col_border" (click)="view()">
+      <div><img src="assets/show.PNG" alt="show" style="width:120px;"></div>
+      <div class="head_cap">SHOW TICKET</div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col col_border" >
+      <div><img src="assets/wallet.PNG" alt="wallet" style="width:120px;"></div>
+      <div class="head_cap">R-WALLET</div>
+    </div>
+    <div class="col col_border" >
+      <div><img src="assets/profile.PNG" alt="profile" style="width:120px;"></div>
+      <div class="head_cap">PROFILE</div>
+    </div>
+    <div class="col col_border" >
+      <div><img src="assets/transc.PNG" alt="transc" style="width:120px;"></div>
+      <div class="head_cap">TRANSACTIONS</div>
+    </div>
+    </div>
+    </div>
+
+</div>
+
+
+<div class="container-fluid navdiv" style="height: 8vh;" *ngIf="show">
+  <div class="row">
+    
+   
+    
+     
+    <div class="col-2" style="margin-top: 39px;" (click)="back()">
+<div><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+</svg></div>
+
+
+    </div>
+    <div class="col" style="font-size: 61px;
+    margin-top: 39px; margin-left: -40px;">Show Ticket</div>
+  </div>
+</div>
+
+<div *ngIf="!show">
+<div class="container-fluid" id="footer_above">
+  <div class="row">
+<div class="col-6"></div>
+<div class="col-2" style="font-size: 40px;
+    padding-left: 65px;
+    padding-top: 48px;">HELP</div>
+<div class="col"> <div class="circle_help">
+  <img src="assets/help.PNG" alt="help" style="width: 78px;
+    margin-top:46px;
+    margin-left:46px;">
+</div></div>
+  </div>
+  </div>
+
+</div>
+
+<div *ngIf="!show">
+<div class="container-fluid" id="footer">
+  <div class="row"><div class="version_tab">G.16.70(15.1.50)</div></div>
+   <div class="row" class="version_tab">
+    <img src="assets/below.PNG" alt="below" style="width:120px; border-radius: 50%;">
+                   Centre dor Railway Information System(CRIS)</div>
+  </div>
+
+</div>
+
 
 
 
