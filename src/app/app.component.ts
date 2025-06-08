@@ -7,14 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  showdiv: boolean=true;
   
-  show: boolean=false;
   
 
-  view(){
-    this.show=true;
+  show(){
+    this.showdiv=false;
   }
-  back(){
-    this.show=false;
-  }
+
+
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output, output } from '@angular/core';
 
 @Component({
   selector: 'app-show',
@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   templateUrl: './show.component.html',
   styleUrl: './show.component.css'
 })
-export class ShowComponent {
+export class ShowComponent implements OnInit {
+ 
+  @Output() message=new EventEmitter<any>()
+ 
+  ngOnInit(): void {
+
+    this.message.emit(true);
+    
+  }
+
+  
 
 }
