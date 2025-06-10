@@ -7,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrl: './journeytkt.component.css'
 })
 export class JourneytktComponent {
+ user = {
+    source: '',
+    destination: '',
+    
+  };
 
+onSubmit(){
+  console.log(this.user);
+}
 }

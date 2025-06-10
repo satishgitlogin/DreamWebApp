@@ -16,7 +16,7 @@ import { BookinghistoryComponent } from './bookinghistory/bookinghistory.compone
 import { RwalletComponent } from './rwallet/rwallet.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TransactionsComponent } from './transactions/transactions.component';
-
+import { FormsModule } from '@angular/forms'; 
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,7 +36,8 @@ import { TransactionsComponent } from './transactions/transactions.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
