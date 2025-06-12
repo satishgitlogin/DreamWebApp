@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output, output } from '@angular/core';
+import { FixserviceService } from '../service/fixservice.service';
 
 @Component({
   selector: 'app-show',
@@ -9,12 +10,24 @@ import { Component, EventEmitter, OnInit, Output, output } from '@angular/core';
 export class ShowComponent implements OnInit {
  
   @Output() message=new EventEmitter<any>()
+  bookingpara: any;
+
+  constructor(private service:FixserviceService){}
+
+
  
   ngOnInit(): void {
 
     this.message.emit(true);
+
+    this.bookingpara=this.service.setbooking();
+   
+    console.log(this.bookingpara);
     
   }
+
+  
+
 
   
 

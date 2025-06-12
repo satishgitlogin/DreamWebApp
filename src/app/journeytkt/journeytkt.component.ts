@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FixserviceService } from '../service/fixservice.service';
 
 @Component({
   selector: 'app-journeytkt',
@@ -10,10 +11,18 @@ export class JourneytktComponent {
  user = {
     source: '',
     destination: '',
+    adult: '',
+     fare: '',
+      date: '',
     
   };
 
+  constructor(private service :FixserviceService){
+
+  } 
+
 onSubmit(){
   console.log(this.user);
+  this.service.bookingdata(this.user);
 }
 }

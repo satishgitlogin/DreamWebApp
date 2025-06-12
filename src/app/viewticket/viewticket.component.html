@@ -29,7 +29,7 @@
   </div>
 
   <div class="row" style="margin-left: 45px">
-    <div class="col" style="font-size: 40px; font-weight: bold">110.00/-</div>
+    <div class="col" style="font-size: 40px; font-weight: bold">{{bookingpara.fare}}/-</div>
     <div class="col"></div>
     <div class="col" style="font-size: 40px; font-weight: bold">9637703183</div>
   </div>
@@ -64,7 +64,7 @@
         </div>
         <div class="col" style="margin-left: -77px;">
           <div>नागपूर</div>
-          <div>NAGPUR</div>
+          <div>{{bookingpara.source}}</div>
           <div>नागपुर ज.</div>
         </div>
       </div>
@@ -88,7 +88,7 @@
         </div>
         <div class="col" style="margin-left: -77px;">
           <div>अकोला ज.</div>
-      <div>AKOLA JN</div>
+      <div>{{bookingpara.destination}}</div>
       <div>अकोला जण.</div>
         </div>
       </div>
@@ -106,7 +106,7 @@
       margin-top: 31px;
     "
   >
-    <div class="col">ADULT:1 CHILD:0</div>
+    <div class="col">ADULT:{{bookingpara.adult}} CHILD:0</div>
     <div class="col"></div>
   </div>
   <div
@@ -155,7 +155,7 @@
       margin-left: 45px;
     "
   >
-    <div class="col">JCO ON:07/06/2025</div>
+    <div class="col">JCO ON:{{bookingpara.date}}</div>
   </div>
   <div
     class="row"
@@ -178,7 +178,7 @@
       margin-left: 45px;
     "
   >
-    <div class="col">BOOKING TIME:07/06/2025 07:37</div>
+    <div class="col">BOOKING TIME:{{bookingpara.date}}</div>
   </div>
 </div>
 

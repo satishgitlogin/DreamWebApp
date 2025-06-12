@@ -71,7 +71,7 @@
           alt="rupee"
           style="width: 54px; border-radius: 50%"
         />
-        110.00
+        {{bookingpara.fare}}
       </div>
     </div>
   </div>
@@ -91,7 +91,7 @@
         style="width: 54px; border-radius: 50%"
       />
 
-      NAGPUR
+     {{bookingpara.source}}
     </div>
     <div class="col" style="font-size: 20px; font-weight: bold">
       <img
@@ -99,7 +99,7 @@
         alt="destination"
         style="width: 54px; border-radius: 50%"
       />
-      AKOLA JN
+     {{bookingpara.destination}}
     </div>
   </div>
 
@@ -108,7 +108,7 @@
   </div>
   <div class="row gend" style="font-size: 20px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
     <div class="col">
-      ADULT:<span style="color: rgba(254, 117, 104, 255)">1</span> CHILD:<span
+      ADULT:<span style="color: rgba(254, 117, 104, 255)">{{bookingpara.adult}}</span> CHILD:<span
         style="color: rgba(254, 117, 104, 255)"
         >0</span
       >
@@ -119,7 +119,7 @@
   <div class="row datu" style="font-size: 20px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
     <div class="col">
       BOOKING DATE:<span style="color: rgba(254, 117, 104, 255)"
-        >07/06/2025 07:37</span
+        >{{bookingpara.date}}</span
       >
     </div>
     <div class="col">
