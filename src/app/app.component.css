@@ -11,11 +11,11 @@ img {
 }
 
 .circle {
-  width: 10px; /* Set the width */
-  height: 10px; /* Set the height (same as width) */
-  border-radius: 50%; /* Creates the circle */
-  background-color: black; /* Optional: Add a background color */
-  margin-bottom: 10px;
+      width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: 4px;
 }
 .font_size {
   font-size: 40px;
