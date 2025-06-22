@@ -7,50 +7,53 @@
   );
 }
 .showclass {
-  margin-top: 50px;
-  background-color: white;
-  width: 92%;
-  margin-left: 43px;
-  border-radius: 21px;
+  margin-top: 13px;
+    background-color: white;
+    width: 96%;
+    margin-left: 7px;
+    border-radius: 5px;
 }
 
 
 .showRow {
-  width: 98%;
-  margin-left: 13px;
-  background-image: linear-gradient(
-    to right,
-    rgba(254, 117, 104, 255),
-    rgba(248, 135, 73, 255)
-  );
-  height: 3vh;
-  margin-top: 25px;
+ width: 102%;
+    margin-left: -3px;
+    background-image: linear-gradient(to right, rgba(254, 117, 104, 255), rgba(248, 135, 73, 255));
+    height: 4vh;
+    margin-top: 8px;
 }
 .journey_class {
+ color: white;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 4px;
+}
+.fare_class{
   color: white;
-  font-size: 26px;
-  margin-top: 2px;
+    font-size: 12px;
+    margin-top: 0px;
+    padding-top: 4px;
 }
 .start_end {
   width: 98%;
-  margin-left: 13px;
-  height: 3vh;
+  margin-left: 3px;
+  height: 5vh;
 }
 .via {
   width: 98%;
-  margin-left: 13px;
+  
   height: 3vh;
 }
 .gend {
-  width: 98%;
-  margin-left: 13px;
-  height: 3vh;
+  width: 104%;
+ 
+  height: 4vh;
 }
 
 .datu {
-  width: 98%;
-  margin-left: 13px;
-  height: 3vh;
+  width: 100%;
+  
+  height: 4vh;
 }
 .nextplan {
   width: 98%;

@@ -10,7 +10,15 @@ import { FixserviceService } from '../service/fixservice.service';
 export class ShowComponent implements OnInit {
  
   @Output() message=new EventEmitter<any>()
-  bookingpara: any;
+
+bookingpara = {
+    source: '',
+    destination: '',
+    adult: '',
+     fare: '',
+      date: '',
+    
+  };
 
   constructor(private service:FixserviceService){}
 

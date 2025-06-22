@@ -1,11 +1,11 @@
 <div class="container-fluid navdiv" style="height: 8vh">
   <div class="row">
-    <div class="col-2" style="margin-top: 39px">
+    <div class="col-2" style="padding-top: 16px;">
       <div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="100"
-          height="100"
+          width="25"
+          height="25"
           fill="currentColor"
           class="bi bi-arrow-left"
           viewBox="0 0 16 16"
@@ -19,29 +19,31 @@
     </div>
     <div
       class="col"
-      style="font-size: 61px; margin-top: 39px; margin-left: -40px"
+      style="font-size: 18px;
+    margin-top: 16px;
+    margin-left: -26px;"
     >
       Show Ticket
     </div>
   </div>
 </div>
 
-<div
+ <div
   class="container-fluid navdiv"
   style="
-    margin-top: 50px;
-    width: 92%;
+    margin-top: 10px;
+    width: 96%;
     height: 5vh;
-    margin-left: 43px;
-    border-radius: 21px;
+    border-radius: 5px
   "
 >
   <div class="row">
 
-     
-    <div class="col" style="font-size: 50px; margin-top: 18px">SHOW TICKET</div>
+<div class="col-2"></div>     
+    <div class="col" style="font-size: 11px;
+    margin-top: 11px;">SHOW TICKET</div>
   </div>
-</div>
+</div> 
 
 <div
   class="container-fluid showclass"
@@ -57,30 +59,31 @@
   <div class="row showRow">
     <div
       class="col-6 journey_class"
-      style="padding-top: 12px; border-right: 2px solid #dee2e6"
+      style=" border-right: 2px solid #dee2e6"
     >
       JOURNEY(M-TICKET)
     </div>
-    <div class="col"></div>
-    <div class="col journey_class" style=" padding-top: 5px">
+    
+    <div class="col-6 fare_class" style=" padding-top: 5px;padding-left: 58px;">
       <div>
         FARE :
 
         <img
           src="assets/rupee.PNG"
           alt="rupee"
-          style="width: 54px; border-radius: 50%"
+          style="width: 20px; border-radius: 50%"
         />
-        {{bookingpara.fare}}
+        <!-- {{bookingpara.fare}} -->
+         110.00
       </div>
     </div>
   </div>
 
-  <div class="row start_end" style="border-bottom: 3px solid #dee2e6;">
+   <div class="row start_end" style="border-bottom: 3px solid #dee2e6;">
     <div
       class="col"
       style="
-        font-size: 23px;
+        font-size: 11px;
         font-weight: bold;
         border-right: 2px solid #dee2e6;
       "
@@ -88,45 +91,53 @@
       <img
         src="assets/source.PNG"
         alt="source"
-        style="width: 54px; border-radius: 50%"
+        style="width: 35px; border-radius: 50%"
       />
 
-     {{bookingpara.source}}
+     <!-- {{bookingpara.source}} -->
+      NAGPUR
     </div>
-    <div class="col" style="font-size: 20px; font-weight: bold">
+    <div class="col" style="font-size: 11px; font-weight: bold">
       <img
         src="assets/destination.PNG"
         alt="destination"
-        style="width: 54px; border-radius: 50%"
+        style="width: 35px; border-radius: 50%"
       />
-     {{bookingpara.destination}}
+     <!-- {{bookingpara.destination}} -->
+      AKOLA JN.
     </div>
-  </div>
+  </div> 
 
-  <div class="row via" style="font-size: 20px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
-    <div class="col">Via:--</div>
+   <div class="row via" style="font-size:11px;margin-left: 3px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
+    <div class="col" style="padding-left: 0px;">Via:--</div>
   </div>
-  <div class="row gend" style="font-size: 20px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
-    <div class="col">
-      ADULT:<span style="color: rgba(254, 117, 104, 255)">{{bookingpara.adult}}</span> CHILD:<span
+   <div class="row gend" style="font-size: 11px;margin-left: 3px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
+    <div class="col" style="padding-left: 0px;border-right: 3px solid #dee2e6">
+      ADULT:<span style="color: rgba(254, 117, 104, 255)">
+        <!-- {{bookingpara.adult}} -->1
+      </span> CHILD:<span
         style="color: rgba(254, 117, 104, 255)"
         >0</span
       >
     </div>
-    <div class="col">SECOND(||)</div>
+    <div class="col" style="border-right: 3px solid #dee2e6">SECOND(||)</div>
     <div class="col">SUPERFAST(S)</div>
   </div>
-  <div class="row datu" style="font-size: 20px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
-    <div class="col">
+   <div class="row datu" style="font-size: 11px; font-weight: bold;border-bottom: 3px solid #dee2e6;">
+    <div class="col-8" style="border-right: 3px solid #dee2e6">
       BOOKING DATE:<span style="color: rgba(254, 117, 104, 255)"
-        >{{bookingpara.date}}</span
+        >
+        <!-- {{bookingpara.date}} -->
+         21/06/2025 06:54
+        </span
       >
     </div>
-    <div class="col">
+    <div class="col-4" style="font-size: 9px;
+    padding-left: 0px;">
       UTS NO:<span style="color: rgba(254, 117, 104, 255)">XYG0E39025</span>
     </div>
-  </div>
-  <div
+  </div> 
+  <!-- <div
     class="row nextplan"
     style="font-size: 20px; font-weight: bold; color: rgba(254, 117, 104, 255)"
   >
@@ -145,5 +156,5 @@
         style="width: 54px; border-radius: 50%"
       />NEXT TRAINS
     </div>
-  </div>
-</div>
+  </div> -->
+</div> 
