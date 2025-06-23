@@ -8,6 +8,7 @@ import { JourneytktComponent } from './journeytkt/journeytkt.component';
 
 const routes: Routes = [
 
+  {path: '', component:JourneytktComponent },
   {path: 'showtkt', component:ShowComponent },
   {path: 'profile', component:ProfileComponent },
    {path: 'journeytkt', component:JourneytktComponent },

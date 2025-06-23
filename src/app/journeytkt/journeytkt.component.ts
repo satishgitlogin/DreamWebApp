@@ -16,7 +16,7 @@ export class JourneytktComponent {
       date: '',
     
   };
-
+  showdiv: boolean=true;
   constructor(private service :FixserviceService){
 
   } 
@@ -25,4 +25,9 @@ onSubmit(){
   console.log(this.user);
   this.service.bookingdata(this.user);
 }
+
+
+  show(){
+    this.showdiv=false;
+  }
 }

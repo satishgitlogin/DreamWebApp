@@ -1,8 +1,66 @@
 .showclass {
-  margin-top: 50px;
-  background-color: white;
-  width: 92%;
-  height: 20vh;
-  margin-left: 43px;
-  border-radius: 21px;
+ margin-top: 13px;
+    background-color: white;
+    width: 96%;
+    height: 20vh;
+    /* margin-left: 43px; */
+    border-radius: 10px;
+}
+img {
+  border-radius: 50%;
+}
+.navdiv {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(254, 117, 104, 255),
+    rgba(248, 135, 73, 255)
+  );
+}
+
+.circle {
+      width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: black;
+    margin-bottom: 4px;
+}
+.font_size {
+  font-size: 10px;
+}
+.col_border {
+  border: 3px solid #dee2e6;
+}
+.head_cap {
+  font-size: 10px;
+  color: red;
+}
+.version_tab {
+  color: red;
+  text-align: center;
+  font-size: 14px;
+}
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer_above {
+  position: fixed;
+  bottom: 86px;
+  width: 100%;
+}
+
+.circle_help {
+  width: 50px; /* Set the width */
+  height: 50px; /* Set the height (same as width) */
+  border-radius: 50%; /* Creates the circle */
+  background-color: rgba(
+    254,
+    117,
+    104,
+    255
+  ); /* Optional: Add a background color */
+  margin-bottom: 10px;
 }
