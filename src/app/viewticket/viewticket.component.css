@@ -1,9 +1,11 @@
 .showclass_base {
   margin-top: 6px;
-  background-color: #cc8222;
+ background-color: #e7aa59; 
+  /* background-color: #eeace4; */
+  /* background-color: #baf3d8; */
   width: 95%;
   height: 60vh;
-  border-radius: 10px;
+  border-radius: 10px 10px 0px 0px;
 }
 .head {
   font-size: 11px;
