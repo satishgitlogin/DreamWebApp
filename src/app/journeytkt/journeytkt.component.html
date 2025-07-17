@@ -1,4 +1,3 @@
-
 <div *ngIf="showdiv">
   <!-- 360x740 -->
   <div class="container-fluid navdiv">
@@ -173,53 +172,147 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   "
 >
-  <div class="row" style="color: white;
-   color: white;
-    height: 4vh;
-    background-color: rgba(254, 117, 104, 255);
-    font-size: 11px;
-    padding-top: 6px;
-    padding-left: 21px;
-    border-radius: 10px 10px 0px 0px;
-    ">NORMAL BOOKING</div>
-
-
-  <div class="row">
-    <div class="col"></div>
-    <div class="col"></div>
+  <div
+    class="row"
+    style="
+      color: white;
+      color: white;
+      height: 4vh;
+      background-color: rgba(254, 117, 104, 255);
+      font-size: 11px;
+      padding-top: 6px;
+      padding-left: 21px;
+      border-radius: 10px 10px 0px 0px;
+    "
+  >
+    NORMAL BOOKING
   </div>
- 
 
-  
-  
+  <div class="row" style="padding-top: 12px">
+    <div class="col" style="font-size: 12px">
+      <input type="radio" name="paperless" (change)="handleChange($event)" />Book & Travel(Paperless)
+    </div>
+    <div class="col" style="font-size: 12px">
+      <input type="radio" name="paperless" (change)="handlepaper($event)"/>Book & Print(Paper)
+    </div>
+  </div>
 
+  <div
+    class="row"
+    style="
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #f8f9fa;
+      width: 101%;
+      margin-left: 0px;
+      font-size: 11px;
+      margin-top: 12px;
+    "
+    *ngIf="instructions"
+
+  >
+    <div>
+      * Use this option if you are outside station premises/Railway track
+    </div>
+    <div>* Use show ticket option on mobile is the travel authority.</div>
+    <div>* Set your phone GPS to high accuracy mode.</div>
+    <div style="color: red; font-weight: 600">
+      * No cancellation is allowed for paperless ticket.
+    </div>
+  </div>
+
+
+   <div
+    class="row"
+    style="
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      background-color: #f8f9fa;
+      width: 101%;
+      margin-left: 0px;
+      font-size: 11px;
+      margin-top: 12px;
+    "
+    *ngIf="paper"
+
+  >
+    <div>
+      * Book anywhere.
+    </div>
+    <div>* Print ticket at originating station.</div>
+    <div>* PRINTED TICKET is travel authority.</div>
+    <div style="color: red; font-weight: 600">
+      * Travel without ticket printout is punishable.
+    </div>
+  </div>
+
+  <div class="row" style="width: 101%; margin-left: 0px; margin-top: 10px">
+    <div class="col-5" style="border-bottom: 2px solid red; text-align: center">
+      <div style="font-size: 13px">Depart from</div>
+      <div>STN</div>
+      <div style="font-size: 11px">Station Name</div>
+    </div>
+    <div class="col-2">
+      <div style="margin-top: 22px; margin-left: 9px">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-arrow-left-right"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M1 11.5a.5.5 0 0 0 .5.5h11.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 11H1.5a.5.5 0 0 0-.5.5m14-7a.5.5 0 0 1-.5.5H2.707l3.147 3.146a.5.5 0 1 1-.708.708l-4-4a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 4H14.5a.5.5 0 0 1 .5.5"
+          />
+        </svg>
+      </div>
+    </div>
+    <div class="col-5" style="border-bottom: 2px solid red; text-align: center">
+      <div style="font-size: 13px">Going to</div>
+      <div>STN</div>
+      <div style="font-size: 11px">Station Name</div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 10px">
+    <div class="col" style="padding-left: 33px">
+      <div
+        style="
+          border-radius: 16px;
+          width: 75%;
+          font-size: 12px;
+          color: white;
+          text-align: center;
+          background-image: linear-gradient(
+            to right,
+            rgba(254, 117, 104, 255),
+            rgba(248, 135, 73, 255)
+          );
+        "
+      >
+        NEXT TRAINS
+      </div>
+    </div>
+    <div class="col" style="padding-left: 33px">
+      <div
+        style="
+          border-radius: 16px;
+          width: 75%;
+          font-size: 12px;
+          color: white;
+          text-align: center;
+          background-image: linear-gradient(
+            to right,
+            rgba(254, 117, 104, 255),
+            rgba(248, 135, 73, 255)
+          );
+        "
+      >
+        GET FARE
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 10px;"></div>
 </div>
-
-
- <!-- <form (ngSubmit)="onSubmit()" #userForm="ngForm">
-  <label>source</label>
-  <input type="text" name="source" [(ngModel)]="user.source" required />
-  <br />
-
-  <label>destination:</label>
-  <input type="text" name="destination" [(ngModel)]="user.destination" required />
-  <br />
-
-<label>count:</label>
-  <input type="text" name="adult" [(ngModel)]="user.adult" required />
-  <br />
-
-   <label>fare:</label>
-  <input type="number" name="fare" [(ngModel)]="user.fare" required />
-  <br />
-
-   <label>date:</label>
-  
-   <input type="datetime-local" name="date" [(ngModel)]="user.date" required  />
-  <br />
- 
-
-  <button type="submit" [disabled]="!userForm.valid">Submit</button>
-</form> -->
-
-

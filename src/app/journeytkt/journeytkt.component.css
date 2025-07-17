@@ -2,7 +2,7 @@
  margin-top: 13px;
     background-color: white;
     width: 96%;
-    height: 30vh;
+    /* height: 35vh; */
     /* margin-left: 43px; */
     border-radius: 10px;
 }
@@ -64,3 +64,6 @@ img {
   ); /* Optional: Add a background color */
   margin-bottom: 10px;
 }
+  input[type="radio"] {
+            accent-color:rgb(247, 34, 34); 
+        }

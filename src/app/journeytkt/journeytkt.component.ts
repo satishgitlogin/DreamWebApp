@@ -17,6 +17,8 @@ export class JourneytktComponent {
     
   };
   showdiv: boolean=true;
+  instructions: boolean=false;
+  paper: boolean=false;
   constructor(private service :FixserviceService){
 
   } 
@@ -29,5 +31,15 @@ onSubmit(){
 
   show(){
     this.showdiv=false;
+  }
+  handleChange(event:any){
+
+    this.instructions=true;
+    this.paper=false;
+  }
+    handlepaper(event:any){
+
+   this.instructions=false;
+    this.paper=true;
   }
 }
