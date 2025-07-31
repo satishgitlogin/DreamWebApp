@@ -1,0 +1,8 @@
+.navdiv {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(254, 117, 104, 255),
+    rgba(248, 135, 73, 255)
+  );
+}

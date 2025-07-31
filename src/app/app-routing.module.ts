@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ViewticketComponent } from './viewticket/viewticket.component';
 import { ProfileComponent } from './profile/profile.component';
 import { JourneytktComponent } from './journeytkt/journeytkt.component';
+import { StartComponent } from './start/start.component';
+import { EndComponent } from './end/end.component';
 
 const routes: Routes = [
 
@@ -13,6 +15,9 @@ const routes: Routes = [
   {path: 'profile', component:ProfileComponent },
    {path: 'journeytkt', component:JourneytktComponent },
   {path: 'showtkt/viewtkt', component:ViewticketComponent },
+  {path: 'start', component:StartComponent },
+  {path: 'end', component:EndComponent },
+
   
 ];
 

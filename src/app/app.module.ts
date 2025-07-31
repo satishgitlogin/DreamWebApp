@@ -16,7 +16,12 @@ import { BookinghistoryComponent } from './bookinghistory/bookinghistory.compone
 import { RwalletComponent } from './rwallet/rwallet.component';
 import { ProfileComponent } from './profile/profile.component';
 import { TransactionsComponent } from './transactions/transactions.component';
-import { FormsModule } from '@angular/forms'; 
+import { FormsModule } from '@angular/forms';
+import { StartComponent } from './start/start.component';
+import { EndComponent } from './end/end.component'; 
+import { MatSelectModule } from '@angular/material/select';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,12 +37,16 @@ import { FormsModule } from '@angular/forms';
     BookinghistoryComponent,
     RwalletComponent,
     ProfileComponent,
-    TransactionsComponent
+    TransactionsComponent,
+    StartComponent,
+    EndComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    MatSelectModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

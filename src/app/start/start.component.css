@@ -1,0 +1,16 @@
+.navdiv {
+  color: white;
+  background-image: linear-gradient(
+    to right,
+    rgba(254, 117, 104, 255),
+    rgba(248, 135, 73, 255)
+  );
+}
+.showclass {
+ margin-top: 13px;
+    background-color: white;
+    width: 96%;
+    /* height: 35vh; */
+    /* margin-left: 43px; */
+    border-radius: 10px;
+}
